@@ -13,6 +13,8 @@ section {
   align-items: center;
 }
 
+/* navigation-1 */
+
 .navigation {
   min-width: 40em;
 
@@ -44,3 +46,32 @@ section {
 
   color: #ff0000;
 }
+
+/* navigation-2 */
+
+.navigation-list-2 {
+  padding-left: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
+}
+
+.navigation-item-2 {
+  margin: .25em 0;
+  border-left: .125em solid red;
+}
+
+.navigation-item-2:first-child {
+  border-left: 0;
+}
+
+.navigation-link-2 {
+  padding: 1em 3em;
+
+  display: block;
+
+  color: #ff0000;
+}
+
