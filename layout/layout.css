@@ -1,0 +1,235 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  color: #000;
+  background-color: #eee;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: baseline;
+
+  max-width: 50%;
+  min-height: 80vh;
+
+  border: .125em dashed #666;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom:.5em; /** don't think this is the solution to align them **/
+}
+
+h2 {
+  font-size: 1em;
+}
+
+
+.navigation-bar {
+  width: 20%;
+  min-height: 80vh;
+
+  padding: .7em;
+
+  background-color: lightgray;
+}
+
+main {
+  width: 60%;
+
+  padding: .7em;
+
+}
+
+aside {
+  width: 20%;
+  min-height: 80vh;
+
+  padding: .7em;
+
+  background-color:  lightgray;
+}
+
+.margin {
+  margin-bottom: 1.2em;
+}
+
+/*Layout-1*/
+
+footer {
+  padding: 1em;
+
+  background-color: gainsboro;
+
+}
+
+footer p {margin: 0;}
+
+.justify-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 78vh;
+}
+
+@media only screen and (max-width:960px) {
+  .wrapper {
+    flex-direction: column;
+
+    min-width: 100%;
+    min-height: 100vh;
+
+    border: .125em solid red;
+  }
+
+  main {
+    order: 1;
+  
+    min-width: 100%;
+
+  }
+
+  .justify-content {
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  .navigation-bar {
+    order: 2;
+  
+    min-width: 100%;
+    min-height: auto;
+
+  }
+
+  aside {
+    order: 3;
+  
+    min-width: 100%;
+    min-height: auto;
+
+  }
+
+
+}
+
+/*Layout-2*/
+
+.navigation-list-2 {
+  display: flex;
+  justify-content: space-around;
+
+  padding-left: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.navigation-item-2 {
+  margin: .25em 0;
+  border-left: .125em solid blue;
+}
+
+.navigation-item-2:first-child {
+  border-left: 0;
+}
+
+.navigation-link-2 {
+  padding: 0em 2em;
+
+  display: block;
+
+  color: blue;
+}
+
+.navigation-3 {
+  display: flex;
+  align-items: baseline;
+
+  padding: 4em 0;
+
+  background-color: gainsboro;
+}
+
+.navigation-list-3 {
+  display: flex;
+  
+  padding-left: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+
+  margin-right: auto;
+  padding: 0 1em 0 1em;
+
+  color: blue;
+  font-size: 2em;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.navigation-item-3:first-child {
+  margin: .25em 0;
+  border-left: none;
+}
+
+.wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+  max-width: 50%;
+  min-height: 60vh;
+
+  border: .125em dashed #000;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.width {
+  width: 100%;
+}
+
+.navigation-bar-2 {
+  width: 20%;
+  min-height: 60vh;
+
+  padding: .7em;
+
+  background-color: lightgray;
+}
+
+.justify-content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 60vh;
+}
+
+.min-height {
+  min-height: 60vh;
+}

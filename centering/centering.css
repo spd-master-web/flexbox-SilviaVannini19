@@ -39,6 +39,8 @@ body {
   border: .3em solid pink;
 }
 
+/*Centering-2*/
+
 .align-start {
   align-self: flex-start;
 }
@@ -50,6 +52,8 @@ body {
 .align-stretch {
   align-self: stretch;
 }
+
+/*Centering-4*/
 
 .item-4 {
   padding: 1.5em;
